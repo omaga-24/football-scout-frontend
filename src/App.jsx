@@ -203,7 +203,7 @@ function App() {
           {!loading && players.map((p, i) => (
             <div className="player-card" key={i}>
               <div className="player-rating">{p.rating}</div>
-              <img src={p.image_url} alt={p.name} className="player-img" />
+              <img src={p.image_url} alt={p.name} className="player-img"  referrerPolicy='no-referrer' />
               <div className="player-info">
                 <h3>{p.name}</h3>
                 <div className="team-row">
