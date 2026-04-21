@@ -207,7 +207,7 @@ function App() {
               <div className="player-info">
                 <h3>{p.name}</h3>
                 <div className="team-row">
-                  <img src={p.team_logo_url} alt={p.team_name} className="team-logo" />
+                  <img src={p.team_logo_url} alt={p.team_name} className="team-logo" referrerPolicy='no-referrer' />
                   <span>{p.team_name}</span>
                 </div>
                 <div className="stats">
