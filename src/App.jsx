@@ -22,7 +22,7 @@ function App() {
     setSuggestions([]);
 
     try {
-      const response = await axios.get(`http://127.0.0.1:8000/api/v1/scout/${playerName}`);
+      const response = await axios.get(`https://football-scout-backend-production.up.railway.app/api/v1/scout/${playerName}`);
       if (response.data.status === "success") {
         const pData = response.data.data;
 
@@ -66,7 +66,7 @@ function App() {
     const fetchSuggestions = async () => {
       if (search.length > 2) {
         try {
-          const res = await axios.get(`http://127.0.0.1:8000/api/v1/suggestions/${search}`);
+          const res = await axios.get(`https://football-scout-backend-production.up.railway.app/api/v1/suggestions/${search}`);
           if (Array.isArray(res.data)) {
             const namesOnly = res.data.map(p => p.name);
             setSuggestions(namesOnly);
