@@ -266,7 +266,7 @@ function App() {
                       <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
                     </svg>
                   </button>
-                  <img src={sp.image_url} alt="" />
+                  <img src={sp.image_url} alt="" referrerPolicy='no-referrer'/>
                   <p>{sp.name}</p>
                 </div>
               ))}
@@ -285,7 +285,7 @@ function App() {
                     <th>Stat</th>
                     {mySquad.map((sp, idx) => (
                       <th key={idx}>
-                        <img src={sp.image_url} alt="" className="table-img" />
+                        <img src={sp.image_url} alt="" className="table-img" referrerPolicy='no-referrer' />
                         <p style={{ margin: 0, fontSize: '0.9rem' }}>{sp.name.split(' ')[0]}</p>
                       </th>
                     ))}
