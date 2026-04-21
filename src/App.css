@@ -477,13 +477,13 @@ input:focus {
 
 /* --- 📱 Final Ultra-Responsive Fixes --- */
 @media (max-width: 768px) {
-  /* Card එකේ ප්‍රමාණය හරියට හදමු */
+  
   .card {
     padding: 20px 15px;
     width: 95%;
   }
 
-  /* Search Section එක පේළියෙන් පේළියට */
+  
   .search-section {
     flex-direction: column;
     width: 100%;
@@ -507,16 +507,16 @@ input:focus {
     z-index: 10;
   }
 
-  /* 🃏 Player Card එක Mobile වලදී Vertical (යටියට) කිරීම */
+
   .player-card {
-    flex-direction: column; /* Image එක උඩට, Text එක යටට */
+    flex-direction: column;
     text-align: center;
     padding: 30px 15px 20px 15px;
     gap: 15px;
     align-items: center;
   }
 
-  /* Rating එක දකුණු පැත්තේ ඉහළටම ස්ථාවර කිරීම */
+  
   .player-rating {
     top: 10px;
     right: 10px;
@@ -531,7 +531,7 @@ input:focus {
     margin: 0 auto;
   }
 
-  /* Info එක මැදට සැකසීම */
+  
   .player-info {
     width: 100%;
     display: flex;
@@ -549,11 +549,11 @@ input:focus {
 
   .stats {
     justify-content: center;
-    flex-wrap: wrap; /* ඉඩ මදි නම් යටට යන්න */
+    flex-wrap: wrap; 
     gap: 8px;
   }
 
-  /* 🛡️ Squad Grid එක 2 columns කිරීම */
+ 
   .squad-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -564,18 +564,18 @@ input:focus {
     height: 70px;
   }
 
-  /* 📊 Comparison Table එක හිර නොවී Scroll වෙන්න ඉඩ දීම */
+  
   .table-wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
 
   .compare-table {
-    min-width: 500px; /* Table එක ඕනෑවට වඩා කුඩා වීම වළක්වයි */
+    min-width: 500px; 
   }
 }
 
-/* ඉතා කුඩා screens (iPhone SE වගේ) */
+
 @media (max-width: 400px) {
   .player-info h3 {
     font-size: 1.3rem;
